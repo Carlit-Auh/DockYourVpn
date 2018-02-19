@@ -1,0 +1,25 @@
+Commande Docker :
+	Lancer le container : docker-compose -f docker-compose.yml up -d --build
+	Arrêter le container : docker-compose down
+	Utiliser Bash dans le projet (Une fois container lancer) : docker exec -it -u 0 dyv_php_1 bash
+Commande Symfony :
+	installer le projet : Une fois dans le projet en mode BASH : composer install
+
+1) Build Docker : docker-compose -f docker-compose.yml up -d --build
+2) GO dans le container
+3) Dans le container --> composer install
+4) Installer Node et Yarn hors du container puis jouer les différentes commandes après l'installation :
+
+Installer NODEJS/NPM + Yarn en local
+https://yarnpkg.com/lang/en/docs/install/
+https://nodejs.org/en/
+
+yarn add sass-loader node-sass --dev
+yarn add webpack-notifier --dev
+yarn add bootstrap-sass --dev
+yarn add jquery --dev
+
+
+commande compil CSS
+./node_modules/.bin/encore dev
+yarn run encore dev --watch

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DockYourVpn</title>
+    <meta name="viewport" content=" minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+    <body>
+        {% block body %}
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="http://disputebills.com"><img src="{{ asset('build/images/logo.png') }}" alt="DockYourVpn"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right navList">
+                            <li class="active"><a href="#">Accueil</a></li>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Se Connecter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset("build/js/app.js") }}"></script>
+        {% endblock %}
+    </body>
+</html>
